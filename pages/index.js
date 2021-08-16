@@ -4,4 +4,4 @@ function HomePage() {
 	</section>
 }
 
-export default Home
+export default HomePage
