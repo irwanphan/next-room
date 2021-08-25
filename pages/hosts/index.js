@@ -11,7 +11,10 @@ function HostsPage() {
         <ul>
             {hosts.map((host) => (
                 <li key={host.id}>
-                    <Link href={`/hosts/${host.id}`}>{host.name}</Link>
+                    <Link href={{
+                        pathname: '/hosts/[id]',
+                        query: {id: host.id}
+                    }}>{host.name}</Link>
                 </li>
             ))}
         </ul>
