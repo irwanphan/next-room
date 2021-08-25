@@ -1,7 +1,7 @@
-function EventsPage() {
+function AllEventsPage() {
     return <section>
         events page
     </section>
 }
 
-export default EventsPage
+export default AllEventsPage
