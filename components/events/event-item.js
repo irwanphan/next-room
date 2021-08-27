@@ -6,7 +6,7 @@ function EventItem(props) {
     const humanReadableDate = new Date(date).toLocaleDateString('en-US', {
         day: 'numeric',
         month: 'long',
-        year: numeric
+        year: 'numeric'
     })
     const formatedAddress = location.replace(', ', '\n')
     const exploreLink = `/events/${id}`

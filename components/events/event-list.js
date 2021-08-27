@@ -7,7 +7,7 @@ function EventList(props) {
     return <section>
         event list
         <ul>
-            {items.map( (event) => (
+            {items.map((event) => (
                 <EventItem
                     key={event.id} 
                     id={event.id}
