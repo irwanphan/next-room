@@ -1,4 +1,5 @@
 import Link from "next/link"
+import classes from "./event-item.module.sass"
 
 function EventItem(props) {
     // props for data coming from outside this component
@@ -11,7 +12,7 @@ function EventItem(props) {
     const formatedAddress = location.replace(', ', '\n')
     const exploreLink = `/events/${id}`
     
-    return <li>
+    return <li className={classes.eventItem}>
         <img src={'/' + image} alt={title} />
         <div>
             <div>
