@@ -3,7 +3,7 @@ import { getFeaturedEvents } from "../dummy-data"
 
 function AllEventsPage() {
     const featuredEvents = getFeaturedEvents()
-    console.log(featuredEvents)
+    // console.log(featuredEvents)
 
     return <section>
         <EventList items={featuredEvents} />

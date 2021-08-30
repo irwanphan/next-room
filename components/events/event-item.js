@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Button from "../ui/button"
 import classes from "./event-item.module.sass"
 
 function EventItem(props) {
@@ -21,7 +22,8 @@ function EventItem(props) {
                 <address>{formatedAddress}</address>
             </div>
             <div>
-                <Link href={exploreLink}>explore more</Link>
+                <Button link={exploreLink}>explore more</Button>
+                {/* <Link href={exploreLink}>explore more</Link> */}
             </div>
         </div>
     </li>
