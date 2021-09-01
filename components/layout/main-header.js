@@ -10,7 +10,6 @@ function MainHeader() {
             <nav className={classes.navigation}>
                 <ul>
                     <Link href="/events">all events</Link>
-                    <Link></Link>
                 </ul>
             </nav>
         </header>
