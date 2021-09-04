@@ -30,7 +30,7 @@ function EventsSearch() {
                     </select>
                 </div>
             </div>
-            <Button link={}>find events</Button>
+            <Button>find events</Button>
         </form>
     )
 }
