@@ -3,6 +3,7 @@ import { useRouter } from "next/router"
 
 import EventList from "../../components/events/event-list"
 import ResultsTitle from "../../components/events/results-title"
+import ErrorAlert from "../../components/ui/error-alert"
 import { getFilteredEvents } from "../dummy-data"
 import Button from "../../components/ui/button"
 
@@ -32,8 +33,10 @@ function FilteredEventsPage() {
     ) {
         return (
             <Fragment>
-                <div className="center">
+                <ErrorAlert>
                     <p>invalid search filter, try again</p>
+                </ErrorAlert>
+                <div className="center">
                     <Button link="/events/">show all event</Button>
                 </div>
             </Fragment>
@@ -48,8 +51,10 @@ function FilteredEventsPage() {
     if (!filteredEvents || filteredEvents.length === 0) {
         return (
             <Fragment>
-                <div className="center">
+                <ErrorAlert>
                     <p>no event found for the chosen filter, try again</p>
+                </ErrorAlert>
+                <div className="center">
                     <Button link="/events/">show all event</Button>
                 </div>
             </Fragment>
